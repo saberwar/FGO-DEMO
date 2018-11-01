@@ -1,0 +1,54 @@
+	#server-information{
+				width: 300px;
+				height: 700px;
+				border-style: outset;
+				border-color:skyblue ;
+				border-radius: 15px;
+			 
+			 background-color:rgba(84,84,84,0.95);
+           position:absolute;
+           margin-top:0px;
+           
+			
+
+	
+
+				
+				
+			}
+			
+			
+			table{
+				text-align: center;
+				margin: auto;
+				top:0; 
+right:0; 
+bottom:0; 
+left:0; 
+			}
+			/*属性框样式*/
+			.server-value{
+				border-radius: 30px;
+	border-color: transparent;
+	background-color: transparent;
+	color: skyblue;
+	border-color: orange;
+	text-align: center;
+	
+			}
+			/*选中时边框颜色*/
+			.server-value:focus{
+    outline: none;    
+   
+}
+/*标签框样式*/
+
+.filed-name{
+	position: relative;
+	font-family: "bodoni mt black";
+	color: #0B2E13;
+	border-bottom-color: #007BFF;
+	border-bottom-style: outset;
+	font-size:20px;
+	color: #FFA500;
+}

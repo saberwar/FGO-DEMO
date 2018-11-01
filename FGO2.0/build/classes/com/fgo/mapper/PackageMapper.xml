@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fgo.mapper.PackageMapper">
+    <!-- 获取用户所有从者 -->
+   <select id="gerServersList" resultType="Servers">
+    select * from fgo_server
+where fgo_server.id in(select c.serverid from fgo_user u join fgo_package p on u.packageid=p.id join fgo_storage s on p.id=s.packageid join fgo_card c on s.cardid=c.id
+where u.id=#{id}
+)
+   </select>
+  
+</mapper>

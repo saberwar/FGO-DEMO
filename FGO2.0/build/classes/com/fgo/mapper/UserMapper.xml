@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fgo.mapper.UserMapper">
+    <!-- 获取所有用户 -->
+   <select id="findAllUser" resultType="User">
+    select * from fgo_user
+   </select>
+    <!-- 判断用户登陆是否合法 -->
+    <select id="UserLogin" resultType="User" parameterType="User">
+     select * from fgo_user 
+     where id=#{id} and pass=#{pass}
+    </select>
+</mapper>
